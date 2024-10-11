@@ -1,0 +1,3 @@
+pythagore_view:
+    path: /pythagore/view
+    controller: App\Controller\PythagoreController::displayPythagoreAction
