@@ -9,12 +9,12 @@ class PythagoreUtility
         $html = "<table border='1' cellpadding='11' cellspacing='0'>";
         for ($i = 1; $i <= 10; $i++) {
             $html .= '<tr>';
-            for ($j = 1; $j <= 10; $j++) {
-                if ($j === $i) {
+            for ($k = 1; $k <= 10; $k++) {
+                if ($k === $i) {
                     $html .= '<td> X </td>';
                 }
                 else {
-                    $html .= '<td>' . ($i * $j) . '</td>';
+                    $html .= '<td>' . ($i * $k) . '</td>';
                 }
             }
             $html .= '</tr>';
