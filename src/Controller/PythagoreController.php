@@ -15,10 +15,8 @@ class PythagoreController extends AbstractController
     {
         $this->pythagoreUtility = $pythagoreUtility;
     }
-
-    /**
-     * @Route("/pythagore/view", name="pythagore_view")
-     */
+    // Utilisation de #[Route()] à la place de l'annotation @
+    #[Route("/pythagore/view", name:"pythagore_view")]
     public function displayPythagoreAction(): Response
     {
         $tableHtml = $this->pythagoreUtility->display();
