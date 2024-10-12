@@ -3,6 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}My Application{% endblock %}</title>
+            <style>
+        body {
+            display: flex;
+            justify-content: center;  
+            align-items: center;     
+            height: 100vh;          
+        }
+        h1{
+            text-align: center;
+            border: 1px solid black;
+        }
+        th{
+            font-weight: normal;
+        }
+        .x{
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+        table{
+            background-color: aliceblue;
+        }
+
+    </style>
+    
     </head>
     <body>
         {% block body %}
